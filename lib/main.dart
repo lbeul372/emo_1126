@@ -150,12 +150,12 @@ class _MyHomePageState extends State<MyHomePage> {
       _emotionData = null; // 결과 초기화
     });
 
-    const String apiUrl = "https://lbeul372.pythonanywhere.com/analyze";
+    const String apiUrl = "https://nonfelicitously-gametophoric-peyton.ngrok-free.dev/analyze";
 
     try {
       final response = await http.post(
         Uri.parse(apiUrl),
-        headers: {"Content-Type": "application/json"},
+        headers: {"Content-Type": "application/json", "ngrok-skip-browser-warning": "69420",},
         body: jsonEncode({"text": text}),
       );
 
